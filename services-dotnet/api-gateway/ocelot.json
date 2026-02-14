@@ -1,0 +1,51 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/auth/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5002 } ],
+      "UpstreamPathTemplate": "/auth/{everything}",
+      "UpstreamMethods": [ "Post", "Options" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5001 } ],
+      "UpstreamPathTemplate": "/user/{everything}",
+      "UpstreamMethods": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ride/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 8081 } ],
+      "UpstreamPathTemplate": "/ride/{everything}",
+      "UpstreamMethods": [ "Get", "Post" ]
+    },
+    {
+  "DownstreamPathTemplate": "/api/ride/{everything}",
+  "DownstreamScheme": "http",
+  "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 8081 } ],
+  "UpstreamPathTemplate": "/ride/{everything}",
+  "UpstreamMethods": [ "Get", "Post" ]
+    },
+    {
+  "DownstreamPathTemplate": "/api/driver/{everything}",
+  "DownstreamScheme": "http",
+  "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 8082 } ],
+  "UpstreamPathTemplate": "/driver/{everything}",
+  "UpstreamMethods": [ "Get", "Post", "Put" ]
+   },
+   {
+  "DownstreamPathTemplate": "/api/admin/{everything}",
+  "DownstreamScheme": "http",
+  "DownstreamHostAndPorts": [ { "Host": "localhost", "Port": 5241 } ],
+  "UpstreamPathTemplate": "/admin-logic/{everything}",
+  "UpstreamMethods": [ "Get", "Post" ]
+  }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
+  }
+
+
+}
