@@ -1,4 +1,5 @@
 namespace admin_service.Dtos;
+
 public class UserDto
 {
     public Guid Id { get; set; }

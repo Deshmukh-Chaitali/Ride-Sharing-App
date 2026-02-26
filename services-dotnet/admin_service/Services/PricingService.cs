@@ -30,4 +30,17 @@ public class PricingService : IPricingService
             _currentPricing.BaseFare = 50.0; // normal Fare 
         }
     }   
+
+    public double CalculateEstimatedFare(double distance)
+{
+    double fare = _currentPricing.BaseFare;
+
+    if (distance > 3)
+    {
+        double extraKm = distance - 3;
+        fare += (extraKm * _currentPricing.RatePerKm);
+    }
+
+    return fare * _currentPricing.PriceMultiplier;
+}
 }

@@ -144,7 +144,13 @@ C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\bin\Debug\net8.0\MySql.Data.dll
@@ -230,6 +236,7 @@ C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\obj\Debug\net8.
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\obj\Debug\net8.0\user-service.AssemblyInfo.cs
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\obj\Debug\net8.0\user-service.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\obj\Debug\net8.0\user-service.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\obj\Debug\net8.0\user-service.sourcelink.json
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\user_service\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

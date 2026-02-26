@@ -5,19 +5,13 @@ namespace user_service.Data;
 
 public class UserDbContext : DbContext
 {
+    // This constructor allows Program.cs to "inject" the connection
     public UserDbContext(DbContextOptions<UserDbContext> options) : base(options)
     {
     }
 
-    // Changed to Uppercase 'Users' to match Controller calls
     public DbSet<User> Users { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        // This is fine for local, but Program.cs usually handles this
-        if (!optionsBuilder.IsConfigured)
-        {
-            optionsBuilder.UseMySQL("server=localhost;port=3306;database=UserDb;user=root;password=root;");
-        }
-    }
+    // REMOVE the OnConfiguring method entirely. 
+    // It is better to manage connections in one place (Program.cs).
 }

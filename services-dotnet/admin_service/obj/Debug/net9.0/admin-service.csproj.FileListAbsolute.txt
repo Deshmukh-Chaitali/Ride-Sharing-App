@@ -48,6 +48,7 @@ C:\Users\Admin\Desktop\CDAC Project\services-dotnet\admin_service\obj\Debug\net9
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\admin_service\obj\Debug\net9.0\admin-service.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\admin_service\obj\Debug\net9.0\admin-service.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\admin_service\obj\Debug\net9.0\admin-service.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\CDAC Project\services-dotnet\admin_service\obj\Debug\net9.0\admin-service.sourcelink.json
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\admin_service\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\admin_service\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\Admin\Desktop\CDAC Project\services-dotnet\admin_service\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

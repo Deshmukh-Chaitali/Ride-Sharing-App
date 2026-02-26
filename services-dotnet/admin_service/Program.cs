@@ -1,29 +1,31 @@
-using admin_service.Services;
+using admin_service.Services; // Tells .NET where to find IPricingService
+using Microsoft.OpenApi.Models; // For Swagger if needed
 
 var builder = WebApplication.CreateBuilder(args);
 
+// 1. ADD CORS POLICY
+builder.Services.AddCors(options => {
+    options.AddPolicy("AllowAll", policy => {
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
+
 builder.Services.AddControllers();
 
-//registering custom services 
-builder.Services.AddScoped<IUserServiceClient, UserServiceClient>();
-builder.Services.AddSingleton<IPricingService, PricingService>();
+// Register your custom services
+// If these are in the Services folder, the 'using' above fixes this
+builder.Services.AddSingleton<IPricingService, PricingService>(); 
+builder.Services.AddHttpClient<IUserServiceClient, UserServiceClient>();
 
-// Admin service references to user service 
-builder.Services.AddHttpClient("UserService", client =>
-{
-    // User Service port to 5228
-    client.BaseAddress = new Uri("http://localhost:5228/api/");
-    client.DefaultRequestHeaders.Add("Accept", "application/json");
-});
-
-// Admin Service Port to 5241
-builder.WebHost.ConfigureKestrel(options =>
-{
-    options.ListenLocalhost(5241);
-});
+// 2. SWAGGER FIX
+// If you don't have Swagger installed, you can comment these two lines out
+// builder.Services.AddEndpointsApiExplorer();
+// builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// 3. ENABLE CORS (Must be before MapControllers)
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 app.MapControllers();

@@ -52,6 +52,13 @@ public class AdminController : ControllerBase
         return Ok(new { Message = "Pricing updated successfully", Current = _pricingService.GetCurrentPricing() });
     }
 
+    [HttpGet("estimate")]
+public IActionResult GetEstimate([FromQuery] double distance)
+{
+    var fare = _pricingService.CalculateEstimatedFare(distance);
+    return Ok(new { Distance = distance, EstimatedFare = fare });
+}
+
     // Rainy season doubles pricing
     // [HttpPost("surge-toggle")]
     // public IActionResult ToggleSurge([FromQuery] bool isRainy)
